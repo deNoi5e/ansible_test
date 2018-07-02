@@ -1,10 +1,7 @@
 ---
-- hosts: all
-  tasks:
-    - name: Ping all servers
-      ping:
+- name: Install apache, start and enabled services
+  hosts: all
+ 
 
-    - name: Install apache2
-      yum:
-        pkg: httpd
-        state: latest
+  roles:
+    - apache_installer
