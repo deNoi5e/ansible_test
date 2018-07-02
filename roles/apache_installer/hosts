@@ -1,0 +1,2 @@
+[main]
+host2  ansible_ssh_host=172.31.46.155 ansible_ssh_user=root

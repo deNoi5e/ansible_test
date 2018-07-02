@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+    - name: Ping all servers
+      ping:
+
+    - name: Install apache2
+      yum:
+        pkg: httpd
+        state: latest
