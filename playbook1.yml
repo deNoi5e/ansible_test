@@ -1,7 +1,6 @@
 ---
 - name: Install apache, start and enabled services
   hosts: all
- 
-
+  
   roles:
     - apache_installer

@@ -8,3 +8,14 @@
       pkg: httpd
       state: latest
 
+  - name: Enable Apache Services
+    service: name=httpd state=started
+
+  - name: Open port 80
+    firewalld: service=http permanent=true state=enabled
+
+  - name: start firewall service
+    service: name=firewalld state=restarted 
+
+  - name: Say me ip a
+    shell: ip a
